@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.kpi.course.window.MountainBase">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="16" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="9" y="8" width="747" height="503"/>
+    </constraints>
+    <properties>
+      <background color="-196615"/>
+      <maximumSize width="2147483647" height="500"/>
+    </properties>
+    <border type="none" title-justification="2">
+      <font/>
+      <title-color color="-524301"/>
+    </border>
+    <children>
+      <component id="8432f" class="javax.swing.JButton" binding="startBtn">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Get Zvits"/>
+        </properties>
+      </component>
+      <component id="740c2" class="javax.swing.JButton" binding="exitBtn">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exit"/>
+        </properties>
+      </component>
+      <component id="3b395" class="javax.swing.JButton" binding="infoBtn">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Info"/>
+        </properties>
+      </component>
+      <component id="fd3b" class="javax.swing.JButton" binding="shwProd">
+        <constraints>
+          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Product Table"/>
+        </properties>
+      </component>
+      <component id="fc249" class="javax.swing.JButton" binding="shwPlaces">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Places Table"/>
+        </properties>
+      </component>
+      <component id="53da8" class="javax.swing.JButton" binding="shwRadio">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Radio Table"/>
+        </properties>
+      </component>
+      <component id="7d8ac" class="javax.swing.JButton" binding="shwFood">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Food Table"/>
+        </properties>
+      </component>
+      <component id="85004" class="javax.swing.JButton" binding="shwJourney">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Journey Table"/>
+        </properties>
+      </component>
+      <component id="4e87a" class="javax.swing.JButton" binding="shwClientService">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Client Service Table"/>
+        </properties>
+      </component>
+      <component id="e5e9c" class="javax.swing.JButton" binding="chgProd">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Change Product Table"/>
+        </properties>
+      </component>
+      <component id="8b3b7" class="javax.swing.JButton" binding="shwClient">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Client Table"/>
+        </properties>
+      </component>
+      <scrollpane id="97078">
+        <constraints>
+          <grid row="1" column="1" row-span="15" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="7fc5e" class="javax.swing.JTable" binding="table1" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-2228262"/>
+              <cellSelectionEnabled value="false"/>
+              <columnSelectionAllowed value="false"/>
+              <gridColor color="-16645630"/>
+              <preferredScrollableViewportSize width="200" height="200"/>
+              <selectionForeground color="-16645630"/>
+            </properties>
+            <clientProperties>
+              <JTable.autoStartsEdit class="java.lang.Boolean" value="false"/>
+            </clientProperties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
