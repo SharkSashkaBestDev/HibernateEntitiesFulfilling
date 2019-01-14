@@ -29,6 +29,12 @@ public class Main {
         System.out.println("Client services count: " + clientServices.size());
 
         clients.forEach(System.out::println);
+        places.forEach(System.out::println);
+        feed.forEach(System.out::println);
+        travels.forEach(System.out::println);
+        rents.forEach(System.out::println);
+        products.forEach(System.out::println);
+        clientServices.forEach(System.out::println);
 
         EntityFulfiller.closeAll();
     }
