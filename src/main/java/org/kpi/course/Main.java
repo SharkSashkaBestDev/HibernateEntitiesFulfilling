@@ -28,6 +28,8 @@ public class Main {
         System.out.println("Products count: " + products.size());
         System.out.println("Client services count: " + clientServices.size());
 
+        clients.forEach(System.out::println);
+
         EntityFulfiller.closeAll();
     }
 
