@@ -54,7 +54,7 @@ public class EntityFulfiller {
         "завтрак","обед","ужин"
     );
 
-    private static SessionFactory sessionFactory = buildSessionFactory();
+    public static SessionFactory sessionFactory = buildSessionFactory();
 
     public static List<Client> getClients(int count) {
         List result = new ArrayList();
@@ -64,7 +64,7 @@ public class EntityFulfiller {
             client.setGender(getRandomGender());
             client.setName(getRandomName(client.getGender()));
             client.setSurname(getRandomSurname());
-            client.setSurname(getRandomMiddlename(client.getGender()));
+            client.setMiddlename(getRandomMiddlename(client.getGender()));
             client.setBirthdate(getRandomBirthdate());
 
             result.add(client);

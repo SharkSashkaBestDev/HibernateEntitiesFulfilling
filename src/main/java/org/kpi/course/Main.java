@@ -1,5 +1,6 @@
 package org.kpi.course;
 
+import org.hibernate.Session;
 import org.kpi.course.entity.*;
 import org.kpi.course.util.EntityFulfiller;
 import org.kpi.course.window.MountainBase;
@@ -28,13 +29,19 @@ public class Main {
         System.out.println("Products count: " + products.size());
         System.out.println("Client services count: " + clientServices.size());
 
-        clients.forEach(System.out::println);
-        places.forEach(System.out::println);
-        feed.forEach(System.out::println);
-        travels.forEach(System.out::println);
-        rents.forEach(System.out::println);
-        products.forEach(System.out::println);
-        clientServices.forEach(System.out::println);
+        Session session = EntityFulfiller.sessionFactory.getCurrentSession();
+
+        session.beginTransaction();
+
+        clients.stream().map(session::merge).forEach(System.out::println);
+        places.stream().map(session::merge).forEach(System.out::println);
+        feed.stream().map(session::merge).forEach(System.out::println);
+        travels.stream().map(session::merge).forEach(System.out::println);
+        rents.stream().map(session::merge).forEach(System.out::println);
+        products.stream().map(session::merge).forEach(System.out::println);
+        clientServices.stream().map(session::merge).forEach(System.out::println);
+
+        session.getTransaction().commit();
 
         EntityFulfiller.closeAll();
     }
